@@ -1,0 +1,94 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+}
+
+/* css reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/*  */
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: var(--light-pink);
+    background-image: url(/src/assets/images/background-pattern-desktop.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+main {
+    padding: 2rem;
+}
+
+.card {
+    margin-top: 10rem;
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 20px 15px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 20px 15px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 20px 15px 0px rgba(0,0,0,0.2);
+}
+
+.card-top-section {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card-top-section h1 {
+    font-size: 3rem;
+    color: var(--dark-purple);
+}
+
+@media (max-width: 700px) {
+    body {
+        background-image: url(/src/assets/images/background-pattern-mobile.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding: 2rem;
+    }
+    
+    .card {
+        margin-top: 5rem;
+    }
+}
