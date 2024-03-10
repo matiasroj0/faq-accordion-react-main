@@ -4,7 +4,7 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ### Links
 
-- Live Site URL: https://clinquant-snickerdoodle-3cb001.netlify.app/
+- Live Site URL: https://matiasrojo-faq-accordion.netlify.app/
 
 ### Screenshot
 
